@@ -1,0 +1,56 @@
+.body{
+    display: grid;
+    grid-template-columns: repeat(3,1fr)
+}
+
+.heroes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* margin-left: 50px; */
+}
+
+.spider, .wonder, .gem, .captain{
+    padding: 10px;
+}
+
+.villains{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* margin-right: 50px; */
+}
+
+.spider, .wonder, .captain, .gem{
+    border: 1px solid rgb(223, 218, 218);
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #888888;
+}
+
+.num{
+    font-size:xx-large;
+}
+
+.score p{
+    margin-top: 0px;
+}
+
+.spider p, .wonder p, .score p, .captain p, .gem p{
+    text-align: center;
+}
+
+@media(max-width: 600px){
+    .heroes, .villains{
+        display: block;
+    }
+
+    .wonder, .gem{
+        margin-top: 20px;
+    }
+
+    .img{
+        align-items: center;
+    }
+}
+
+
